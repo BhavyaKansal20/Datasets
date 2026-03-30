@@ -78,7 +78,7 @@ These datasets can be used for:
 
 ## ⚖️ License
 
-This repository is licensed under **Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0)**.
+This repository is licensed under **BSD2-Clause Licence**.
 
 © 2026 Bhavya Kansal
 
