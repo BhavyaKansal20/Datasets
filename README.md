@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <div align="center">
 
 ![Datasets Banner](banner.png)
@@ -7,122 +8,149 @@
 ---
 
 # 📊 Bhavya Kansal – Dataset Repository
+=======
+<p align="center">
+    <img src="banner.png" alt="Bhavya Kansal Datasets Banner" width="100%" />
+</p>
+>>>>>>> Stashed changes
 
-Welcome to my curated dataset repository.
+# Bhavya Kansal - Dataset Repository
 
-This repository contains a collection of datasets used for:
+<p align="center">
+    Curated CSV datasets for machine learning, analytics, and experimentation.
+</p>
 
-* Machine Learning
-* AI Model Development
-* Data Analysis & Experimentation
-* Educational and Research purposes
+<p align="center">
+    <img src="https://img.shields.io/badge/Datasets-26-0B7285?style=for-the-badge" alt="26 datasets" />
+    <img src="https://img.shields.io/badge/Format-CSV-1C7ED6?style=for-the-badge" alt="CSV format" />
+    <img src="https://img.shields.io/badge/Total_Size-4.02_MB-2F9E44?style=for-the-badge" alt="4.02 MB" />
+    <img src="https://img.shields.io/badge/Updated-Apr_2026-F08C00?style=for-the-badge" alt="Updated Apr 2026" />
+</p>
 
-🌐 **Maintained by:** Bhavya Kansal
-🔗 **Portfolio:** https://bhavyakansal.dev
+## Overview
 
----
+This repository is a practical collection of tabular datasets for:
 
-## 🧠 About This Repository
+- machine learning model training
+- data preprocessing practice
+- EDA and visualization projects
+- interview and classroom assignments
 
-This repository includes a mix of:
+Maintainer: Bhavya Kansal  
+Portfolio: https://bhavyakansal.dev  
+GitHub: https://github.com/BhavyaKansal20
 
-* 📁 Original datasets created by me
-* 🔧 Fine-tuned / processed datasets
-* 🌍 Public datasets (e.g., Kaggle, open sources)
+## Repository Snapshot
 
-⚠️ **Important:**
-Each dataset may have different licensing terms.
-Users must comply with original dataset licenses where applicable.
+| Metric | Value |
+|---|---:|
+| Total datasets | 26 |
+| File format | CSV |
+| Approx. storage | 4.02 MB |
+| Largest dataset | House Prices.csv |
+| Smallest dataset | Placement2.csv |
 
----
+## Visual Dataset Mix
 
-## 📦 Dataset Categories
+```mermaid
+pie showData
+        title Dataset Distribution (by use case)
+        "Regression and Pricing" : 7
+        "Classification" : 9
+        "Clustering and Synthetic" : 5
+        "Career and Placement" : 3
+        "Finance and Time Series" : 2
+```
 
-This repository includes datasets across:
+## Full Dataset Catalog
 
-* 🏥 Healthcare & Medical
-* 🤖 Machine Learning Practice
-* 📊 Data Analysis
-* 🎯 Recommendation Systems
-* 🎵 Classification (e.g., music, categories)
+| Dataset | Rows | Columns | Size (KB) | Primary Use |
+|---|---:|---:|---:|---|
+| Boston.csv | 506 | 15 | 36.8 | Regression |
+| Crop.csv | 620 | 12 | 38.4 | Classification |
+| DBSCAN_DATA.csv | 500 | 2 | 18.0 | Clustering |
+| House Prices.csv | 21613 | 21 | 2190.0 | Pricing Regression |
+| Placement2.csv | 100 | 3 | 1.0 | Placement Classification |
+| Salary Data.csv | 375 | 6 | 18.9 | Salary Regression |
+| Salary.csv | 375 | 3 | 4.8 | Salary Regression |
+| Social_Network_Ads.csv | 400 | 5 | 10.7 | Binary Classification |
+| Titanic-Dataset.csv | 891 | 12 | 59.8 | Survival Classification |
+| bitcoin.csv | 2785 | 7 | 180.7 | Time Series Analysis |
+| breast-cancer.csv | 569 | 32 | 121.7 | Medical Classification |
+| car data.csv | 301 | 9 | 16.8 | Price Prediction |
+| car.csv | 301 | 9 | 16.8 | Price Prediction |
+| diabetes.csv | 768 | 9 | 22.6 | Medical Classification |
+| houseprice.csv | 21613 | 13 | 1008.5 | House Price Regression |
+| iris copy.csv | 150 | 5 | 4.6 | Multiclass Classification |
+| iris.csv | 150 | 5 | 4.6 | Multiclass Classification |
+| loan.csv | 614 | 13 | 37.1 | Loan Risk Classification |
+| medical_data.csv | 4240 | 16 | 187.3 | Healthcare Analytics |
+| placement.csv | 200 | 2 | 2.1 | Placement Insights |
+| polynomial.csv | 200 | 2 | 2.1 | Curve Fitting |
+| polynomial1.csv | 200 | 2 | 2.1 | Curve Fitting |
+| polynomial2.csv | 200 | 2 | 2.1 | Curve Fitting |
+| polynomial_classification.csv | 10000 | 2 | 117.1 | Decision Boundary Classification |
+| student_placement.csv | 1000 | 3 | 12.5 | Student Placement |
+| unlabeled_iris.csv | 150 | 4 | 2.5 | Unsupervised Practice |
 
----
+## Quick Start
 
-## ⚙️ How to Download Any Dataset
+Clone the repository:
 
-Follow these steps:
+```bash
+git clone https://github.com/BhavyaKansal20/Datasets.git
+cd Datasets
+```
 
-1. Open the dataset file
-2. Click **Raw**
-3. Copy the URL
-4. Use Python script below
+Load any dataset with Python:
 
 ```python
-import requests
 import pandas as pd
 
-url = "PASTE_URL_HERE"
-res = requests.get(url)
-
-with open("dataset.csv", "wb") as f:
-    f.write(res.content)
-
-df = pd.read_csv("dataset.csv")
+df = pd.read_csv("diabetes.csv")
+print(df.shape)
 print(df.head())
 ```
 
----
+Load all CSV files in one go:
 
-## 🚀 Usage
+```python
+from pathlib import Path
+import pandas as pd
 
-These datasets can be used for:
+datasets = {}
+for csv_path in Path('.').glob('*.csv'):
+        datasets[csv_path.name] = pd.read_csv(csv_path)
 
-* Machine Learning model training
-* Data analysis & visualization
-* Academic projects
-* Practice & experimentation
+print(f"Loaded {len(datasets)} datasets")
+```
 
----
+## Repository Standards
 
-## ⚖️ License
+- Use descriptive commit messages for dataset updates.
+- Keep files in CSV format unless a format migration is announced.
+- Preserve headers and data types when modifying files.
+- Add source or context in PRs when introducing new datasets.
 
-This repository is licensed under **BSD2-Clause Licence**.
+## License and Usage
 
-© 2026 Bhavya Kansal
+This repository is licensed under BSD-2-Clause. See LICENSE for details.
 
-* ✅ Free for learning & research
-* ❌ Commercial use not allowed
-* ⚠️ Third-party datasets follow their own licenses
+Important usage note:
 
----
+- Some datasets may originate from public sources.
+- You are responsible for complying with upstream licensing.
+- Prefer educational and research use unless source terms allow otherwise.
 
-## 🚨 Usage Notice
+## Contribution and Security
 
-This repository is provided for **educational purposes only**.
+- Contribution guide: see CONTRIBUTING.md
+- Code of conduct: see CODE_OF_CONDUCT.md
+- Security policy: see SECURITY.md
 
-* Do not misuse datasets
-* Do not violate original dataset licenses
-* Do not claim ownership of third-party data
+## Contact
 
----
+- Website: https://bhavyakansal.dev
+- GitHub: https://github.com/BhavyaKansal20
 
-## 🤝 Contributing
-
-Contributions are welcome!
-
-* Add new datasets
-* Improve existing datasets
-* Update dataset descriptions
-
-Please follow contribution guidelines.
-
----
-
-## 📬 Contact
-
-* 🌐 Website: https://bhavyakansal.dev
-* 💻 GitHub: https://github.com/BhavyaKansal20
-
----
-
-⭐ If this repository helps you, consider giving it a star!
+If this repository helped your project, star it to support future dataset drops.
