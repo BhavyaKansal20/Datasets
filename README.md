@@ -1,3 +1,11 @@
+<div align="center">
+
+![Datasets Banner](banner.png)
+
+<br/>
+
+---
+
 # 📊 Bhavya Kansal – Dataset Repository
 
 Welcome to my curated dataset repository.
