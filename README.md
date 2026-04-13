@@ -2,6 +2,8 @@
 
 <div align="center">
 
+---
+
 # 📊 Bhavya Kansal - Dataset Repository
 
 ***Curated CSV datasets for machine learning, analytics, and educational workflows***
@@ -9,6 +11,8 @@
 ![Datasets](https://img.shields.io/badge/Datasets-26-0B7285?style=for-the-badge) ![Format](https://img.shields.io/badge/Format-CSV-1C7ED6?style=for-the-badge) ![Total Size](https://img.shields.io/badge/Total_Size-4.02_MB-2F9E44?style=for-the-badge) ![Updated](https://img.shields.io/badge/Updated-Apr_2026-F08C00?style=for-the-badge)
 
 </div>
+
+---
 
 ## **Overview**
 
@@ -23,6 +27,8 @@
 **Portfolio:** https://bhavyakansal.dev  
 **GitHub:** https://github.com/BhavyaKansal20
 
+---
+
 ## **Repository Snapshot**
 
 | Metric | Value |
@@ -32,6 +38,8 @@
 | Approx. storage | 4.02 MB |
 | Largest dataset | House Prices.csv |
 | Smallest dataset | Placement2.csv |
+
+---
 
 ## **Want To Download Any CSV For Local Use?**
 
@@ -60,6 +68,8 @@ with open("download_file_name.csv", "wb") as file:
 download_file_name = pd.read_csv("download_file_name.csv")
 print(download_file_name.head())
 ```
+
+---
 
 ## **Full Dataset Catalog**
 
@@ -92,6 +102,8 @@ print(download_file_name.head())
 | student_placement.csv | 1000 | 3 | 12.5 | Student Placement |
 | unlabeled_iris.csv | 150 | 4 | 2.5 | Unsupervised Practice |
 
+---
+
 ## **Dataset Source Links (For More Data)**
 
 ### **General ML Repositories**
@@ -106,6 +118,8 @@ print(download_file_name.head())
 - [Data World](https://data.world/)
 - [Awesome Public Datasets](https://github.com/awesomedata/awesome-public-datasets)
 
+---
+
 ### **Government and Open Data Portals**
 
 - [India AI Datasets](https://indiaai.gov.in/datasets)
@@ -114,6 +128,8 @@ print(download_file_name.head())
 - [EU Open Data Portal](https://data.europa.eu/en)
 - [Canada Open Government](https://open.canada.ca/en/open-data)
 - [Australia Data Portal](https://data.gov.au/)
+
+---
 
 ### **Domain-Specific Sources**
 
@@ -125,6 +141,8 @@ print(download_file_name.head())
 - [MIMIC-III](https://mimic.physionet.org/)
 - [OpenSLR](https://www.openslr.org/)
 - [OpenStreetMap (Geofabrik)](https://download.geofabrik.de/)
+
+---
 
 ### **Quick Access Table**
 
@@ -139,6 +157,8 @@ print(download_file_name.head())
 | Papers with Code | Benchmarks | [Open](https://paperswithcode.com/datasets) |
 | Zenodo | Research | [Open](https://zenodo.org/) |
 
+---
+
 ## **Usage**
 
 These datasets can be used for:
@@ -146,6 +166,8 @@ These datasets can be used for:
 - Machine learning projects
 - Data analysis and visualization
 - Educational and tutorial workflows
+
+---
 
 ## **Contributing**
 
@@ -156,15 +178,21 @@ If you want to add more datasets, open a PR and include:
 - Source/reference (if public)
 - Intended use case
 
+---
+
 ## **License and Compliance**
 
 This repository uses the BSD-2-Clause license. See LICENSE for complete terms.
 
+---
+
 ***Important:*** If any dataset comes from an external source, follow its original license and attribution requirements.
+
+---
 
 ## **Contact**
 
 - Website: https://bhavyakansal.dev
 - GitHub: https://github.com/BhavyaKansal20
 
-If this repository helped you, consider starring it.
+If this repository helped you, consider starring ⭐️ it.
